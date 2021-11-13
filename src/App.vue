@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import TheNavbar from "./components/TheNavbar.vue";
+import TheConverter from "./components/TheConverter.vue";
 </script>
 
 <template>
-  <img class="text-center" alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div class="h-screen">
+    <TheNavbar />
+    <TheConverter />
+  </div>
 </template>
