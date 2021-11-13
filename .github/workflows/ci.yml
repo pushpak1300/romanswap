@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14,16]
+        node: [14]
 
     steps:
       - name: Checkout 🛎
@@ -31,6 +31,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+
       - name: Install dependencies 👨🏻‍💻
         run: npm ci
 
@@ -38,7 +39,7 @@ jobs:
         run: npm run lint
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: peaceiris/actions-gh-pages@v3.8.0
         with:
-          branch: gh-pages
-          folder: dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
