@@ -58,5 +58,5 @@
 </template>
 
 <script lang="ts" setup>
-import { InformationCircleIcon } from "@heroicons/vue/outline";
+import * as InformationCircleIcon from "@heroicons/vue/outline/InformationCircleIcon";
 </script>

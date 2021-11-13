@@ -42,6 +42,6 @@
 
 <script lang="ts" setup>
 import { Disclosure } from "@headlessui/vue";
-import { ShareIcon } from "@heroicons/vue/outline";
+import * as ShareIcon from "@heroicons/vue/outline/ShareIcon";
 import TheLogo from "./TheLogo.vue";
 </script>
