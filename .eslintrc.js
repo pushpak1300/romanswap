@@ -1,6 +1,7 @@
 module.exports = {
     env: {
         node: true,
+        'vue/setup-compiler-macros': true
     },
     extends: [
         'eslint:recommended',
@@ -8,10 +9,10 @@ module.exports = {
         'plugin:vue/vue3-strongly-recommended',
         'plugin:vue/vue3-essential',
         "plugin:vue/base",
-        "prettier"
+        '@vue/typescript',
+        'prettier'
     ],
     rules: {
         // override/add rules settings here, such as:
-        'vue/no-unused-vars': 'error',
     }
 }

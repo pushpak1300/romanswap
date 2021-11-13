@@ -1,8 +1,8 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
-  "vetur.validation.template": false,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "eslint.validate": ["javascript", "javascriptreact", "vue"]
 }
