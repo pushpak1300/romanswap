@@ -6,4 +6,5 @@
   },
   "eslint.validate": ["javascript", "javascriptreact", "vue"],
   "css.validate": false,
+  "volar.autoCompleteRefs": true
 }
